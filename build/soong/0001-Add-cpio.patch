@@ -1,0 +1,25 @@
+From c75da18823c69a142b470453c1e171b6bd183ad3 Mon Sep 17 00:00:00 2001
+From: Verevka <verevka86@gmail.com>
+Date: Sat, 5 Feb 2022 15:48:47 +0300
+Subject: [PATCH] Add cpio
+
+Change-Id: Ide2957d2227dce01eb46edab9361ad47df0e9008
+---
+ ui/build/paths/config.go | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/ui/build/paths/config.go b/ui/build/paths/config.go
+index ed382a5b..4d71e7d2 100644
+--- a/ui/build/paths/config.go
++++ b/ui/build/paths/config.go
+@@ -76,6 +76,7 @@ func GetConfig(name string) PathConfig {
+ var Configuration = map[string]PathConfig{
+ 	"bash":    Allowed,
+ 	"dd":      Allowed,
++	"cpio":    Allowed,
+ 	"diff":    Allowed,
+ 	"dlv":     Allowed,
+ 	"expr":    Allowed,
+-- 
+2.25.1
+

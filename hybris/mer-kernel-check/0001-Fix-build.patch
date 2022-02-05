@@ -1,0 +1,26 @@
+From cfc3ed9a23b07b1dd7003d50a48b78504588d89c Mon Sep 17 00:00:00 2001
+From: Verevka <verevka86@gmail.com>
+Date: Sat, 5 Feb 2022 15:56:14 +0300
+Subject: [PATCH]  Fix build
+
+Change-Id: I443438b5e627625a24d70ce7756d90e4a31431e8
+---
+ mer_verify_kernel_config | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/mer_verify_kernel_config b/mer_verify_kernel_config
+index ce397a9..ae2ec2a 100755
+--- a/mer_verify_kernel_config
++++ b/mer_verify_kernel_config
+@@ -218,7 +218,7 @@ CONFIG_NETFILTER_XT_MATCH_HASHLIMIT	y,m,!	# connman: for iptables hashlimit matc
+ CONFIG_NETFILTER_XT_MATCH_IPRANGE	y,m,!	# connman: for iptables iprange match
+ CONFIG_NETFILTER_XT_MATCH_MARK	y,m,!	# connman: for iptables mark match
+ CONFIG_NETFILTER_XT_MATCH_MULTIPORT	y	# connman: for iptables multiple port match
+-CONFIG_NETFILTER_XT_MATCH_QTAGUID	y,m	# connman: for iptables owner/qtaguid match
++CONFIG_NETFILTER_XT_MATCH_QTAGUID	y,m,!	# connman: for iptables owner/qtaguid match
+ CONFIG_NETFILTER_XT_MATCH_RECENT	y,m,!	# connman: for iptables recent match
+ CONFIG_NETFILTER_XT_MATCH_SCTP	y,m,!	# connman: for iptables sctp match
+ CONFIG_NETFILTER_XT_MATCH_STATE	y,m,!	# connman: for iptables state match
+-- 
+2.25.1
+
