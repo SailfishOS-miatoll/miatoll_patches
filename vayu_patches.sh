@@ -21,7 +21,7 @@ echo $1
 rootdirectory="$ANDROID_ROOT/"
 # ---------------------------------
 
-dirs="build/soong hybris/mer-kernel-check rpm/dhd"
+dirs="build/soong rpm/dhd"
 
 for dir in $dirs ; do
 	cd $rootdirectory
