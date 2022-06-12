@@ -21,7 +21,7 @@ echo $1
 rootdirectory="$ANDROID_ROOT/"
 # ---------------------------------
 
-dirs="build/soong rpm/dhd"
+dirs="build/soong frameworks/av rpm/dhd"
 
 for dir in $dirs ; do
 	cd $rootdirectory
