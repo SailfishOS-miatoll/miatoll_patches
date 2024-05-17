@@ -17,6 +17,9 @@ rm $ANDROID_ROOT/packages/apps/Etar/external/chips/sample/Android.bp
 rm $ANDROID_ROOT/packages/apps/Etar/external/timezonepicker/Android.bp
 rm $ANDROID_ROOT/packages/apps/Etar/external/colorpicker/Android.bp
 
+# Avoid pointless install of ImageMagick in HA build chroot
+rm -rf "$ANDROID_ROOT/vendor/lineage/bootanimation"
+
 echo $1
 rootdirectory="$ANDROID_ROOT/"
 # ---------------------------------
@@ -27,7 +30,7 @@ for dir in $dirs ; do
 	cd $rootdirectory
 	cd $dir
 	echo "Applying $dir patches..."
-	git apply $rootdirectory/vayu_patches/$dir/*.patch
+	git apply $rootdirectory/miatoll-patches/$dir/*.patch
 	echo " "
 done
 

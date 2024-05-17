@@ -1,0 +1,23 @@
+From 2391f7b0b3c0212f41a382b82c0a46079ba9e82b Mon Sep 17 00:00:00 2001
+From: Alexander Winkowski <dereference23@outlook.com>
+Date: Sat, 16 Apr 2022 15:20:12 +0000
+Subject: [PATCH] Use -O3 globally
+
+Change-Id: I0f88a1cddc490b022c9629f23385a5ba8191e2bc
+---
+ cc/config/global.go | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/cc/config/global.go b/cc/config/global.go
+index 80bfe99a9..f2ff375d2 100644
+--- a/cc/config/global.go
++++ b/cc/config/global.go
+@@ -44,7 +44,7 @@ var (
+ 		"-fno-exceptions",
+ 		"-Wno-multichar",
+ 
+-		"-O2",
++		"-O3",
+ 		"-g",
+ 
+ 		"-fno-strict-aliasing",
